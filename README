@@ -3,11 +3,11 @@ dvd2mp4 README
 A simple script to automate converting a dvd to mp4
 
 Requirements:
-	
+
 	HandBrakeCLI
 
-Usage: 
-	
+Usage:
+
 	dvd2mp4 [input] [output]
 
 Example:

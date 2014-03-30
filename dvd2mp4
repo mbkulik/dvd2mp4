@@ -1,15 +1,15 @@
 #!/usr/bin/env ruby
 
 def usage
-	puts "dvd2mp4 [input] [output]"
+  puts "dvd2mp4 [input] [output]"
 end
 
-if ARGV.count == 2 
-	
-	system("HandBrakeCLI --input #{ARGV[0]} --main-feature \
-			--optimize --native-language eng \
-			--subtitle scan --subtitle-forced 1 \
-			--subtitle-burn 1 --output #{ARGV[1]}")
+if ARGV.count == 2
+
+  system("HandBrakeCLI --input #{ARGV[0]} --main-feature \
+         --optimize --native-language eng \
+         --subtitle scan --subtitle-forced 1 \
+         --subtitle-burn 1 --output #{ARGV[1]}")
 else
-	usage()
+  usage()
 end
